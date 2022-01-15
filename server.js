@@ -1,6 +1,6 @@
 const express=require('express');
 const app=express();
-const port=process.env.port || 5001;
+const PORT=process.env.PORT || 5001;
 
 app.use(express.json());
 
@@ -40,6 +40,6 @@ app.post("/users",(req,res)=>{
 
 })
 
-app.listen(port,()=>{
-    console.log("Server running on port : ",port);
+app.listen(PORT,()=>{
+    console.log("Server running on port : ",PORT);
 });
